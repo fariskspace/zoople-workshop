@@ -43,6 +43,7 @@ pipeline {
         stage('Setup Nginx') {
             steps {
                 sh '''
+                cd 
                 pwd
                 cd $NGINX_DIR 
                 ./nginx.sh $DOMAIN $CONTAINER_NAME $APP_PORT
